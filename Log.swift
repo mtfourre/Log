@@ -1,9 +1,8 @@
 //
 //  Log.swift
-//  Dragon
+//  Loggable
 //
 //  Created by Michael Fourre on 7/15/16.
-//  Copyright © 2016 MealSloth. All rights reserved.
 //
 
 struct Log: Loggable {
