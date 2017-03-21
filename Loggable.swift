@@ -12,10 +12,8 @@ public protocol Loggable {
 public extension Loggable {
     fileprivate static func position(file: String, function: String, line: Int) -> String {
         let path = file.components(separatedBy: "/")
-        if let file = path[path.count - 1].replacingOccurrences(of: ".swift", with: "") {
-            return "<\(file):\(line)>"
-        }
-        return ""
+        let file = path[path.count - 1].replacingOccurrences(of: ".swift", with: "")
+        return "<\(file):\(line)>"
     }
     
     fileprivate static func logFirst(_ type: String, file: String, function: String, line: Int, strArr: [String]?) {
