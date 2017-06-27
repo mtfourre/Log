@@ -20,7 +20,7 @@ When log messages are printed to the console, they will take account of the file
 
 outputting the following in the console:
 
-    Log.Debug<UserModel:68>: This is a test log message
+    Log.Debug<UserModel:42>: This is a test log message
 
 Of course any new module may be created which adopts the Loggable protocol, so these log messages are not limited to only the above listed types.
 
