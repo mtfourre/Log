@@ -12,7 +12,7 @@ public protocol Loggable {
 public extension Loggable {
     fileprivate static func position(file: String, function: String, line: Int) -> String {
         let path = file.components(separatedBy: "/")
-        let file = path[path.count - 1].replacingOccurrences(of: ".swift", with: "")
+        let file = path.last?.replacingOccurrences(of: ".swift", with: "") ?? ""
         return "<\(file):\(line)>"
     }
     
