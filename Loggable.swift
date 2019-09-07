@@ -24,7 +24,7 @@ public extension Loggable {
         strArr?.dropFirst().forEach({ print($0) })
     }
     
-    public static func log(type: String, string: String?, file: String, function: String, line: Int) {
+    static func log(type: String, string: String?, file: String, function: String, line: Int) {
         let strArr = string?.components(separatedBy: "\n")
         self.logFirst(type, file: file, function: function, line: line, strArr: strArr)
         self.logRemaining(strArr)
