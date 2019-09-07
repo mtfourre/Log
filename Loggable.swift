@@ -17,7 +17,7 @@ public extension Loggable {
     }
     
     fileprivate static func logFirst(_ type: String, file: String, function: String, line: Int, strArr: [String]?) {
-        print("Log.\(type)\(position(file: file, function: function, line: line)): \(strArr?.first ?? "Could not parse string")")
+        print("Log.\(type)\(self.position(file: file, function: function, line: line)): \(strArr?.first ?? "Could not parse string")")
     }
     
     fileprivate static func logRemaining(_ strArr: [String]?) {
